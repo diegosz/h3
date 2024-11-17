@@ -517,47 +517,6 @@ const ( /* h3api.h:81:1: */
 // * @file constants.h
 // @brief   Constants used by more than one source code file.
 
-//* pi
-
-//* pi / 2.0
-
-//* 2.0 * PI
-
-//* pi / 180
-//* 180 / pi
-
-//* threshold epsilon
-//* sqrt(3) / 2.0
-//* sin(60')
-//* 1/sin(60') *
-
-//* one third *
-
-//* one seventh (1/7) *
-
-// * rotation angle between Class II and Class III resolution axes
-// (asin(sqrt(3.0 / 28.0)))
-
-//* sin(M_AP7_ROT_RADS)
-
-//* cos(M_AP7_ROT_RADS)
-
-//* earth radius in kilometers using WGS84 authalic radius
-
-// * scaling factor from hex2d resolution 0 unit length
-// (or distance between adjacent cell center points
-// on the plane) to gnomonic unit length.
-
-//* max H3 resolution; H3 version 1 has 16 resolutions, numbered 0 through 15
-
-//* The number of faces on an icosahedron
-//* The number of H3 base cells
-//* The number of vertices in a hexagon
-//* The number of vertices in a pentagon
-//* The number of pentagons per resolution *
-
-//* H3 index modes
-
 // Copyright 2016-2021 Uber Technologies, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -4885,7 +4844,7 @@ func Xh3NeighborRotations(tls *libc.TLS, origin uint64, dir uint32, rotations ui
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+2, uint32(368), uintptr(unsafe.Pointer(&__func__)))
+					libc.X__assert_fail(tls, ts, ts+2, int32(368), uintptr(unsafe.Pointer(&__func__)))
 				}
 				return 1
 			}()
@@ -4961,7 +4920,7 @@ func Xh3NeighborRotations(tls *libc.TLS, origin uint64, dir uint32, rotations ui
 					return func() int32 {
 						if 0 != 0 {
 						} else {
-							libc.X__assert_fail(tls, ts, ts+2, uint32(434), uintptr(unsafe.Pointer(&__func__)))
+							libc.X__assert_fail(tls, ts, ts+2, int32(434), uintptr(unsafe.Pointer(&__func__)))
 						}
 						return 0
 					}()
@@ -7514,7 +7473,7 @@ func X_upAp7Checked(tls *libc.TLS, ijk uintptr) uint32 { /* coordijk.c:319:9: */
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+44, uint32(354), uintptr(unsafe.Pointer(&__func__1)))
+					libc.X__assert_fail(tls, ts, ts+44, int32(354), uintptr(unsafe.Pointer(&__func__1)))
 				}
 				return 1
 			}()
@@ -7574,7 +7533,7 @@ func X_upAp7rChecked(tls *libc.TLS, ijk uintptr) uint32 { /* coordijk.c:367:9: *
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+44, uint32(402), uintptr(unsafe.Pointer(&__func__2)))
+					libc.X__assert_fail(tls, ts, ts+44, int32(402), uintptr(unsafe.Pointer(&__func__2)))
 				}
 				return 1
 			}()
@@ -8325,7 +8284,7 @@ func XdirectedEdgeToBoundary(tls *libc.TLS, edge uint64, cb uintptr) uint32 { /*
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+98, uint32(282), uintptr(unsafe.Pointer(&__func__3)))
+					libc.X__assert_fail(tls, ts, ts+98, int32(282), uintptr(unsafe.Pointer(&__func__3)))
 				}
 				return 1
 			}()
@@ -8955,7 +8914,7 @@ func X_faceIjkPentToCellBoundary(tls *libc.TLS, h uintptr, res int32, start int3
 				default:
 					if *(*int32)(unsafe.Pointer(uintptr(unsafe.Pointer(&adjacentFaceDir)) + uintptr((*TFaceIJK)(unsafe.Pointer(bp+152)).Fface)*80 + uintptr((*TFaceIJK)(unsafe.Pointer(bp+100)).Fface)*4)) == DKI {
 					} else {
-						libc.X__assert_fail(tls, ts+150, ts+197, uint32(572), uintptr(unsafe.Pointer(&__func__4)))
+						libc.X__assert_fail(tls, ts+150, ts+197, int32(572), uintptr(unsafe.Pointer(&__func__4)))
 					}
 					edge0 = bp + 232 /* &v2 */
 					edge1 = bp + 200 /* &v0 */
@@ -9151,7 +9110,7 @@ func X_faceIjkToCellBoundary(tls *libc.TLS, h uintptr, res int32, start int32, l
 				default:
 					if *(*int32)(unsafe.Pointer(uintptr(unsafe.Pointer(&adjacentFaceDir)) + uintptr((*TFaceIJK)(unsafe.Pointer(bp)).Fface)*80 + uintptr(face2)*4)) == DKI {
 					} else {
-						libc.X__assert_fail(tls, ts+248, ts+197, uint32(737), uintptr(unsafe.Pointer(&__func__5)))
+						libc.X__assert_fail(tls, ts+248, ts+197, int32(737), uintptr(unsafe.Pointer(&__func__5)))
 					}
 					edge0 = bp + 200 /* &v2 */
 					edge1 = bp + 168 /* &v0 */
@@ -9707,7 +9666,7 @@ func XisValidCell(tls *libc.TLS, h uint64) int32 { /* h3Index.c:130:5: */
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+939, uint32(138), uintptr(unsafe.Pointer(&__func__6)))
+					libc.X__assert_fail(tls, ts, ts+939, int32(138), uintptr(unsafe.Pointer(&__func__6)))
 				}
 				return 1
 			}()
@@ -9724,7 +9683,7 @@ func XisValidCell(tls *libc.TLS, h uint64) int32 { /* h3Index.c:130:5: */
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+939, uint32(144), uintptr(unsafe.Pointer(&__func__6)))
+					libc.X__assert_fail(tls, ts, ts+939, int32(144), uintptr(unsafe.Pointer(&__func__6)))
 				}
 				return 1
 			}()
@@ -9753,7 +9712,7 @@ func XisValidCell(tls *libc.TLS, h uint64) int32 { /* h3Index.c:130:5: */
 					return func() int32 {
 						if 0 != 0 {
 						} else {
-							libc.X__assert_fail(tls, ts, ts+939, uint32(160), uintptr(unsafe.Pointer(&__func__6)))
+							libc.X__assert_fail(tls, ts, ts+939, int32(160), uintptr(unsafe.Pointer(&__func__6)))
 						}
 						return 1
 					}()
@@ -10031,7 +9990,7 @@ func XcompactCells(tls *libc.TLS, h3Set uintptr, compactedSet uintptr, numHexes 
 									return func() int32 {
 										if 0 != 0 {
 										} else {
-											libc.X__assert_fail(tls, ts, ts+939, uint32(400), uintptr(unsafe.Pointer(&__func__7)))
+											libc.X__assert_fail(tls, ts, ts+939, int32(400), uintptr(unsafe.Pointer(&__func__7)))
 										}
 										return 1
 									}()
@@ -10135,7 +10094,7 @@ func XcompactCells(tls *libc.TLS, h3Set uintptr, compactedSet uintptr, numHexes 
 								return func() int32 {
 									if 0 != 0 {
 									} else {
-										libc.X__assert_fail(tls, ts, ts+939, uint32(491), uintptr(unsafe.Pointer(&__func__7)))
+										libc.X__assert_fail(tls, ts, ts+939, int32(491), uintptr(unsafe.Pointer(&__func__7)))
 									}
 									return 1
 								}()
@@ -10158,7 +10117,7 @@ func XcompactCells(tls *libc.TLS, h3Set uintptr, compactedSet uintptr, numHexes 
 									return func() int32 {
 										if 0 != 0 {
 										} else {
-											libc.X__assert_fail(tls, ts, ts+939, uint32(503), uintptr(unsafe.Pointer(&__func__7)))
+											libc.X__assert_fail(tls, ts, ts+939, int32(503), uintptr(unsafe.Pointer(&__func__7)))
 										}
 										return 1
 									}()
@@ -10322,7 +10281,7 @@ func X_h3LeadingNonZeroDigit(tls *libc.TLS, h uint64) uint32 { /* h3Index.c:632:
 	{
 		var r int32 = 1
 		for ; r <= int32(h&(uint64(15)<<DH3_RES_OFFSET)>>DH3_RES_OFFSET); r++ {
-			if uint32(h>>((DMAX_H3_RES-r)*DH3_PER_DIGIT_OFFSET)&uint64(7)) != 0 {
+			if int32(h>>((DMAX_H3_RES-r)*DH3_PER_DIGIT_OFFSET)&uint64(7)) != 0 {
 				return uint32(h >> ((DMAX_H3_RES - r) * DH3_PER_DIGIT_OFFSET) & uint64(7))
 			}
 		}
@@ -10349,7 +10308,7 @@ func X_h3RotatePent60ccw(tls *libc.TLS, h uint64) uint64 { /* h3Index.c:644:9: *
 			// look for the first non-zero digit so we
 			// can adjust for deleted k-axes sequence
 			// if necessary
-			if !(foundFirstNonZeroDigit != 0) && uint32(h>>((DMAX_H3_RES-r)*DH3_PER_DIGIT_OFFSET)&uint64(7)) != uint32(0) {
+			if !(foundFirstNonZeroDigit != 0) && int32(h>>((DMAX_H3_RES-r)*DH3_PER_DIGIT_OFFSET)&uint64(7)) != int32(0) {
 				foundFirstNonZeroDigit = 1
 
 				// adjust for deleted k-axes sequence
@@ -10379,7 +10338,7 @@ func X_h3RotatePent60cw(tls *libc.TLS, h uint64) uint64 { /* h3Index.c:670:9: */
 			// look for the first non-zero digit so we
 			// can adjust for deleted k-axes sequence
 			// if necessary
-			if !(foundFirstNonZeroDigit != 0) && uint32(h>>((DMAX_H3_RES-r)*DH3_PER_DIGIT_OFFSET)&uint64(7)) != uint32(0) {
+			if !(foundFirstNonZeroDigit != 0) && int32(h>>((DMAX_H3_RES-r)*DH3_PER_DIGIT_OFFSET)&uint64(7)) != int32(0) {
 				foundFirstNonZeroDigit = 1
 
 				// adjust for deleted k-axes sequence
@@ -10558,7 +10517,7 @@ func XlatLngToCell(tls *libc.TLS, g uintptr, res int32, out uintptr) uint32 { /*
 		return func() int32 {
 			if 0 != 0 {
 			} else {
-				libc.X__assert_fail(tls, ts, ts+939, uint32(830), uintptr(unsafe.Pointer(&__func__8)))
+				libc.X__assert_fail(tls, ts, ts+939, int32(830), uintptr(unsafe.Pointer(&__func__8)))
 			}
 			return 0
 		}()
@@ -10619,7 +10578,7 @@ func X_h3ToFaceIjk(tls *libc.TLS, h uint64, fijk uintptr) uint32 { /* h3Index.c:
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+939, uint32(877), uintptr(unsafe.Pointer(&__func__9)))
+					libc.X__assert_fail(tls, ts, ts+939, int32(877), uintptr(unsafe.Pointer(&__func__9)))
 				}
 				return 1
 			}()
@@ -10798,7 +10757,7 @@ func XgetIcosahedronFaces(tls *libc.TLS, h3 uint64, out uintptr) uint32 { /* h3I
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+939, uint32(1024), uintptr(unsafe.Pointer(&__func__10)))
+					libc.X__assert_fail(tls, ts, ts+939, int32(1024), uintptr(unsafe.Pointer(&__func__10)))
 				}
 				return 1
 			}()
@@ -10910,7 +10869,7 @@ func validateChildPos(tls *libc.TLS, childPos int64, parent uint64, childRes int
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+939, uint32(1107), uintptr(unsafe.Pointer(&__func__11)))
+					libc.X__assert_fail(tls, ts, ts+939, int32(1107), uintptr(unsafe.Pointer(&__func__11)))
 				}
 				return 1
 			}()
@@ -10962,7 +10921,7 @@ func XcellToChildPos(tls *libc.TLS, child uint64, parentRes int32, out uintptr) 
 						return func() int32 {
 							if 0 != 0 {
 							} else {
-								libc.X__assert_fail(tls, ts, ts+939, uint32(1143), uintptr(unsafe.Pointer(&__func__12)))
+								libc.X__assert_fail(tls, ts, ts+939, int32(1143), uintptr(unsafe.Pointer(&__func__12)))
 							}
 							return 1
 						}()
@@ -10973,7 +10932,7 @@ func XcellToChildPos(tls *libc.TLS, child uint64, parentRes int32, out uintptr) 
 				}
 
 				parentIsPentagon = XisPentagon(tls, *(*uint64)(unsafe.Pointer(bp + 8 /* parent */)))
-				var rawDigit int32 = int32(uint32(child >> ((DMAX_H3_RES - res) * DH3_PER_DIGIT_OFFSET) & uint64(7)))
+				var rawDigit int32 = int32(int32(child >> ((DMAX_H3_RES - res) * DH3_PER_DIGIT_OFFSET) & uint64(7)))
 				// Validate the digit before proceeding
 				if rawDigit == INVALID_DIGIT || parentIsPentagon != 0 && rawDigit == K_AXES_DIGIT {
 					return E_CELL_INVALID
@@ -11004,7 +10963,7 @@ func XcellToChildPos(tls *libc.TLS, child uint64, parentRes int32, out uintptr) 
 		{
 			var res int32 = childRes
 			for ; res > parentRes; res-- {
-				var digit int32 = int32(uint32(child >> ((DMAX_H3_RES - res) * DH3_PER_DIGIT_OFFSET) & uint64(7)))
+				var digit int32 = int32(int32(child >> ((DMAX_H3_RES - res) * DH3_PER_DIGIT_OFFSET) & uint64(7)))
 				if digit == INVALID_DIGIT {
 					return E_CELL_INVALID
 				}
@@ -11018,7 +10977,7 @@ func XcellToChildPos(tls *libc.TLS, child uint64, parentRes int32, out uintptr) 
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+939, uint32(1183), uintptr(unsafe.Pointer(&__func__12)))
+					libc.X__assert_fail(tls, ts, ts+939, int32(1183), uintptr(unsafe.Pointer(&__func__12)))
 				}
 				return 1
 			}()
@@ -11110,7 +11069,7 @@ func XisXfinite(tls *libc.TLS, f float64) uint8 { /* isfinite.c:3:6: */
 
 // extract the `res` digit (0--7) of the current cell
 func _getResDigit(tls *libc.TLS, it uintptr, res int32) int32 { /* iterators.c:27:12: */
-	return int32(uint32((*TIterCellsChildren)(unsafe.Pointer(it)).Fh >> ((DMAX_H3_RES - res) * DH3_PER_DIGIT_OFFSET) & uint64(7)))
+	return int32(int32((*TIterCellsChildren)(unsafe.Pointer(it)).Fh >> ((DMAX_H3_RES - res) * DH3_PER_DIGIT_OFFSET) & uint64(7)))
 }
 
 // increment the digit (0--7) at location `res`
@@ -11806,7 +11765,7 @@ func XcellAreaRads2(tls *libc.TLS, cell uint64, out uintptr) uint32 { /* latLng.
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+1066, uint32(405), uintptr(unsafe.Pointer(&__func__13)))
+					libc.X__assert_fail(tls, ts, ts+1066, int32(405), uintptr(unsafe.Pointer(&__func__13)))
 				}
 				return 1
 			}()
@@ -12012,12 +11971,12 @@ func XedgeLengthM(tls *libc.TLS, edge uint64, length uintptr) uint32 { /* latLng
 func XaddNewLinkedPolygon(tls *libc.TLS, polygon uintptr) uintptr { /* linkedGeo.c:34:18: */
 	if (*TLinkedGeoPolygon)(unsafe.Pointer(polygon)).Fnext == uintptr(0) {
 	} else {
-		libc.X__assert_fail(tls, ts+1103, ts+1125, uint32(35), uintptr(unsafe.Pointer(&__func__14)))
+		libc.X__assert_fail(tls, ts+1103, ts+1125, int32(35), uintptr(unsafe.Pointer(&__func__14)))
 	}
 	var next uintptr = libc.Xcalloc(tls, uint64(1), uint64(unsafe.Sizeof(TLinkedGeoPolygon{})))
 	if next != uintptr(0) {
 	} else {
-		libc.X__assert_fail(tls, ts+1151, ts+1125, uint32(37), uintptr(unsafe.Pointer(&__func__14)))
+		libc.X__assert_fail(tls, ts+1151, ts+1125, int32(37), uintptr(unsafe.Pointer(&__func__14)))
 	}
 	(*TLinkedGeoPolygon)(unsafe.Pointer(polygon)).Fnext = next
 	return next
@@ -12033,7 +11992,7 @@ func XaddNewLinkedLoop(tls *libc.TLS, polygon uintptr) uintptr { /* linkedGeo.c:
 	var loop uintptr = libc.Xcalloc(tls, uint64(1), uint64(unsafe.Sizeof(TLinkedGeoLoop{})))
 	if loop != uintptr(0) {
 	} else {
-		libc.X__assert_fail(tls, ts+1184, ts+1125, uint32(49), uintptr(unsafe.Pointer(&__func__15)))
+		libc.X__assert_fail(tls, ts+1184, ts+1125, int32(49), uintptr(unsafe.Pointer(&__func__15)))
 	}
 	return XaddLinkedLoop(tls, polygon, loop)
 }
@@ -12049,7 +12008,7 @@ func XaddLinkedLoop(tls *libc.TLS, polygon uintptr, loop uintptr) uintptr { /* l
 	if last == uintptr(0) {
 		if (*TLinkedGeoPolygon)(unsafe.Pointer(polygon)).Ffirst == uintptr(0) {
 		} else {
-			libc.X__assert_fail(tls, ts+1214, ts+1125, uint32(61), uintptr(unsafe.Pointer(&__func__16)))
+			libc.X__assert_fail(tls, ts+1214, ts+1125, int32(61), uintptr(unsafe.Pointer(&__func__16)))
 		}
 		(*TLinkedGeoPolygon)(unsafe.Pointer(polygon)).Ffirst = loop
 	} else {
@@ -12070,14 +12029,14 @@ func XaddLinkedCoord(tls *libc.TLS, loop uintptr, vertex uintptr) uintptr { /* l
 	var coord uintptr = libc.Xmalloc(tls, uint64(unsafe.Sizeof(TLinkedLatLng{})))
 	if coord != uintptr(0) {
 	} else {
-		libc.X__assert_fail(tls, ts+1251, ts+1125, uint32(78), uintptr(unsafe.Pointer(&__func__17)))
+		libc.X__assert_fail(tls, ts+1251, ts+1125, int32(78), uintptr(unsafe.Pointer(&__func__17)))
 	}
 	*(*TLinkedLatLng)(unsafe.Pointer(coord)) = TLinkedLatLng{Fvertex: *(*TLatLng)(unsafe.Pointer(vertex))}
 	var last uintptr = (*TLinkedGeoLoop)(unsafe.Pointer(loop)).Flast
 	if last == uintptr(0) {
 		if (*TLinkedGeoLoop)(unsafe.Pointer(loop)).Ffirst == uintptr(0) {
 		} else {
-			libc.X__assert_fail(tls, ts+1265, ts+1125, uint32(82), uintptr(unsafe.Pointer(&__func__17)))
+			libc.X__assert_fail(tls, ts+1265, ts+1125, int32(82), uintptr(unsafe.Pointer(&__func__17)))
 		}
 		(*TLinkedGeoLoop)(unsafe.Pointer(loop)).Ffirst = coord
 	} else {
@@ -12250,12 +12209,12 @@ func findPolygonForHole(tls *libc.TLS, loop uintptr, polygon uintptr, bboxes uin
 	var candidates uintptr = libc.Xmalloc(tls, uint64(polygonCount)*uint64(unsafe.Sizeof(uintptr(0))))
 	if candidates != uintptr(0) {
 	} else {
-		libc.X__assert_fail(tls, ts+1300, ts+1125, uint32(249), uintptr(unsafe.Pointer(&__func__18)))
+		libc.X__assert_fail(tls, ts+1300, ts+1125, int32(249), uintptr(unsafe.Pointer(&__func__18)))
 	}
 	var candidateBBoxes uintptr = libc.Xmalloc(tls, uint64(polygonCount)*uint64(unsafe.Sizeof(uintptr(0))))
 	if candidateBBoxes != uintptr(0) {
 	} else {
-		libc.X__assert_fail(tls, ts+1319, ts+1125, uint32(252), uintptr(unsafe.Pointer(&__func__18)))
+		libc.X__assert_fail(tls, ts+1319, ts+1125, int32(252), uintptr(unsafe.Pointer(&__func__18)))
 	}
 
 	// Find all polygons that contain the loop
@@ -12322,14 +12281,14 @@ func XnormalizeMultiPolygon(tls *libc.TLS, root uintptr) uint32 { /* linkedGeo.c
 	var innerLoops uintptr = libc.Xmalloc(tls, uint64(loopCount)*uint64(unsafe.Sizeof(uintptr(0))))
 	if innerLoops != uintptr(0) {
 	} else {
-		libc.X__assert_fail(tls, ts+1362, ts+1125, uint32(317), uintptr(unsafe.Pointer(&__func__19)))
+		libc.X__assert_fail(tls, ts+1362, ts+1125, int32(317), uintptr(unsafe.Pointer(&__func__19)))
 	}
 
 	// Create an array to hold the bounding boxes for the outer loops
 	var bboxes uintptr = libc.Xmalloc(tls, uint64(loopCount)*uint64(unsafe.Sizeof(TBBox{})))
 	if bboxes != uintptr(0) {
 	} else {
-		libc.X__assert_fail(tls, ts+1381, ts+1125, uint32(321), uintptr(unsafe.Pointer(&__func__19)))
+		libc.X__assert_fail(tls, ts+1381, ts+1125, int32(321), uintptr(unsafe.Pointer(&__func__19)))
 	}
 
 	// Get the first loop and unlink it from root
@@ -12753,7 +12712,7 @@ func XcellToLocalIjk(tls *libc.TLS, origin uint64, h3 uint64, out uintptr) uint3
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+1418, uint32(142), uintptr(unsafe.Pointer(&__func__20)))
+					libc.X__assert_fail(tls, ts, ts+1418, int32(142), uintptr(unsafe.Pointer(&__func__20)))
 				}
 				return 1
 			}()
@@ -12768,7 +12727,7 @@ func XcellToLocalIjk(tls *libc.TLS, origin uint64, h3 uint64, out uintptr) uint3
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+1418, uint32(146), uintptr(unsafe.Pointer(&__func__20)))
+					libc.X__assert_fail(tls, ts, ts+1418, int32(146), uintptr(unsafe.Pointer(&__func__20)))
 				}
 				return 1
 			}()
@@ -12791,7 +12750,7 @@ func XcellToLocalIjk(tls *libc.TLS, origin uint64, h3 uint64, out uintptr) uint3
 		revDir = X_getBaseCellDirection(tls, baseCell, originBaseCell)
 		if revDir != INVALID_DIGIT {
 		} else {
-			libc.X__assert_fail(tls, ts+1442, ts+1418, uint32(161), uintptr(unsafe.Pointer(&__func__20)))
+			libc.X__assert_fail(tls, ts+1442, ts+1418, int32(161), uintptr(unsafe.Pointer(&__func__20)))
 		}
 	}
 
@@ -12832,11 +12791,11 @@ func XcellToLocalIjk(tls *libc.TLS, origin uint64, h3 uint64, out uintptr) uint3
 	if dir != CENTER_DIGIT {
 		if baseCell != originBaseCell {
 		} else {
-			libc.X__assert_fail(tls, ts+1466, ts+1418, uint32(191), uintptr(unsafe.Pointer(&__func__20)))
+			libc.X__assert_fail(tls, ts+1466, ts+1418, int32(191), uintptr(unsafe.Pointer(&__func__20)))
 		}
 		if !(originOnPent != 0 && indexOnPent != 0) {
 		} else {
-			libc.X__assert_fail(tls, ts+1493, ts+1418, uint32(192), uintptr(unsafe.Pointer(&__func__20)))
+			libc.X__assert_fail(tls, ts+1493, ts+1418, int32(192), uintptr(unsafe.Pointer(&__func__20)))
 		}
 
 		var pentagonRotations int32 = 0
@@ -12917,7 +12876,7 @@ func XcellToLocalIjk(tls *libc.TLS, origin uint64, h3 uint64, out uintptr) uint3
 		// cell.
 		if baseCell == originBaseCell {
 		} else {
-			libc.X__assert_fail(tls, ts+1524, ts+1418, uint32(261), uintptr(unsafe.Pointer(&__func__20)))
+			libc.X__assert_fail(tls, ts+1524, ts+1418, int32(261), uintptr(unsafe.Pointer(&__func__20)))
 		}
 
 		var originLeadingDigit int32 = int32(X_h3LeadingNonZeroDigit(tls, origin))
@@ -12972,7 +12931,7 @@ func XlocalIjkToCell(tls *libc.TLS, origin uint64, ijk uintptr, out uintptr) uin
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+1418, uint32(305), uintptr(unsafe.Pointer(&__func__21)))
+					libc.X__assert_fail(tls, ts, ts+1418, int32(305), uintptr(unsafe.Pointer(&__func__21)))
 				}
 				return 1
 			}()
@@ -13096,11 +13055,11 @@ func XlocalIjkToCell(tls *libc.TLS, origin uint64, ijk uintptr, out uintptr) uin
 			// base cells border each other.
 			if baseCell != DINVALID_BASE_CELL {
 			} else {
-				libc.X__assert_fail(tls, ts+1566, ts+1418, uint32(411), uintptr(unsafe.Pointer(&__func__21)))
+				libc.X__assert_fail(tls, ts+1566, ts+1418, int32(411), uintptr(unsafe.Pointer(&__func__21)))
 			}
 			if !(X_isBaseCellPentagon(tls, baseCell) != 0) {
 			} else {
-				libc.X__assert_fail(tls, ts+1596, ts+1418, uint32(412), uintptr(unsafe.Pointer(&__func__21)))
+				libc.X__assert_fail(tls, ts+1596, ts+1418, int32(412), uintptr(unsafe.Pointer(&__func__21)))
 			}
 		}
 
@@ -13109,7 +13068,7 @@ func XlocalIjkToCell(tls *libc.TLS, origin uint64, ijk uintptr, out uintptr) uin
 		var baseCellRotations int32 = *(*int32)(unsafe.Pointer(uintptr(unsafe.Pointer(&XbaseCellNeighbor60CCWRots)) + uintptr(originBaseCell)*28 + uintptr(dir)*4))
 		if baseCellRotations >= 0 {
 		} else {
-			libc.X__assert_fail(tls, ts+1627, ts+1418, uint32(419), uintptr(unsafe.Pointer(&__func__21)))
+			libc.X__assert_fail(tls, ts+1627, ts+1418, int32(419), uintptr(unsafe.Pointer(&__func__21)))
 		}
 
 		// Adjust for pentagon warping within the base cell. The base cell
@@ -13120,7 +13079,7 @@ func XlocalIjkToCell(tls *libc.TLS, origin uint64, ijk uintptr, out uintptr) uin
 			var revDir uint32 = X_getBaseCellDirection(tls, baseCell, originBaseCell)
 			if revDir != INVALID_DIGIT {
 			} else {
-				libc.X__assert_fail(tls, ts+1442, ts+1418, uint32(428), uintptr(unsafe.Pointer(&__func__21)))
+				libc.X__assert_fail(tls, ts+1442, ts+1418, int32(428), uintptr(unsafe.Pointer(&__func__21)))
 			}
 
 			// Adjust for the different coordinate space in the two base cells.
@@ -13141,7 +13100,7 @@ func XlocalIjkToCell(tls *libc.TLS, origin uint64, ijk uintptr, out uintptr) uin
 					return func() int32 {
 						if 0 != 0 {
 						} else {
-							libc.X__assert_fail(tls, ts, ts+1418, uint32(440), uintptr(unsafe.Pointer(&__func__21)))
+							libc.X__assert_fail(tls, ts, ts+1418, int32(440), uintptr(unsafe.Pointer(&__func__21)))
 						}
 						return 1
 					}()
@@ -13163,7 +13122,7 @@ func XlocalIjkToCell(tls *libc.TLS, origin uint64, ijk uintptr, out uintptr) uin
 					return func() int32 {
 						if 0 != 0 {
 						} else {
-							libc.X__assert_fail(tls, ts, ts+1418, uint32(454), uintptr(unsafe.Pointer(&__func__21)))
+							libc.X__assert_fail(tls, ts, ts+1418, int32(454), uintptr(unsafe.Pointer(&__func__21)))
 						}
 						return 1
 					}()
@@ -13436,7 +13395,7 @@ func XgridPathCells(tls *libc.TLS, start uint64, end uint64, out uintptr) uint32
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+1418, uint32(691), uintptr(unsafe.Pointer(&__func__22)))
+					libc.X__assert_fail(tls, ts, ts+1418, int32(691), uintptr(unsafe.Pointer(&__func__22)))
 				}
 				return 1
 			}()
@@ -13452,7 +13411,7 @@ func XgridPathCells(tls *libc.TLS, start uint64, end uint64, out uintptr) uint32
 			return func() int32 {
 				if 0 != 0 {
 				} else {
-					libc.X__assert_fail(tls, ts, ts+1418, uint32(696), uintptr(unsafe.Pointer(&__func__22)))
+					libc.X__assert_fail(tls, ts, ts+1418, int32(696), uintptr(unsafe.Pointer(&__func__22)))
 				}
 				return 1
 			}()
@@ -13763,7 +13722,7 @@ func XcellToBBox(tls *libc.TLS, cell uint64, out uintptr, coverChildren uint8) u
 				return func() int32 {
 					if 0 != 0 {
 					} else {
-						libc.X__assert_fail(tls, ts, ts+1679, uint32(227), uintptr(unsafe.Pointer(&__func__23)))
+						libc.X__assert_fail(tls, ts, ts+1679, int32(227), uintptr(unsafe.Pointer(&__func__23)))
 					}
 					return 1
 				}()
@@ -14025,7 +13984,7 @@ func XiterStepPolygonCompact(tls *libc.TLS, iter uintptr) { /* polyfill.c:408:6:
 							return func() int32 {
 								if 0 != 0 {
 								} else {
-									libc.X__assert_fail(tls, ts, ts+1679, uint32(470), uintptr(unsafe.Pointer(&__func__24)))
+									libc.X__assert_fail(tls, ts, ts+1679, int32(470), uintptr(unsafe.Pointer(&__func__24)))
 								}
 								return 1
 							}()
@@ -14059,7 +14018,7 @@ func XiterStepPolygonCompact(tls *libc.TLS, iter uintptr) { /* polyfill.c:408:6:
 						return func() int32 {
 							if 0 != 0 {
 							} else {
-								libc.X__assert_fail(tls, ts, ts+1679, uint32(493), uintptr(unsafe.Pointer(&__func__24)))
+								libc.X__assert_fail(tls, ts, ts+1679, int32(493), uintptr(unsafe.Pointer(&__func__24)))
 							}
 							return 1
 						}()
@@ -15629,7 +15588,7 @@ func XcellToVertex(tls *libc.TLS, cell uint64, vertexNum int32, out uintptr) uin
 
 	// If the cell is the center child of its parent, it will always have
 	// the lowest index of any neighbor, so we can skip determining the owner
-	if res == 0 || uint32(cell>>((DMAX_H3_RES-res)*DH3_PER_DIGIT_OFFSET)&uint64(7)) != CENTER_DIGIT {
+	if res == 0 || int32(cell>>((DMAX_H3_RES-res)*DH3_PER_DIGIT_OFFSET)&uint64(7)) != CENTER_DIGIT {
 		// Get the left neighbor of the vertex, with its rotations
 		var left uint32 = XdirectionForVertexNum(tls, cell, vertexNum)
 		if left == INVALID_DIGIT {
@@ -15648,7 +15607,7 @@ func XcellToVertex(tls *libc.TLS, cell uint64, vertexNum int32, out uintptr) uin
 		}
 
 		// As above, skip the right neighbor if the left is known lowest
-		if res == 0 || uint32(*(*uint64)(unsafe.Pointer(bp + 8))>>((DMAX_H3_RES-res)*DH3_PER_DIGIT_OFFSET)&uint64(7)) != CENTER_DIGIT {
+		if res == 0 || int32(*(*uint64)(unsafe.Pointer(bp + 8))>>((DMAX_H3_RES-res)*DH3_PER_DIGIT_OFFSET)&uint64(7)) != CENTER_DIGIT {
 			// Get the right neighbor of the vertex, with its rotations
 			// Note that vertex - 1 is the right side, as vertex numbers are CCW
 			var right uint32 = XdirectionForVertexNum(tls,
@@ -15659,7 +15618,7 @@ func XcellToVertex(tls *libc.TLS, cell uint64, vertexNum int32, out uintptr) uin
 					return func() int32 {
 						if 0 != 0 {
 						} else {
-							libc.X__assert_fail(tls, ts, ts+1738, uint32(245), uintptr(unsafe.Pointer(&__func__25)))
+							libc.X__assert_fail(tls, ts, ts+1738, int32(245), uintptr(unsafe.Pointer(&__func__25)))
 						}
 						return 1
 					}()
@@ -15964,7 +15923,7 @@ func XinitVertexGraph(tls *libc.TLS, graph uintptr, numBuckets int32, res int32)
 		(*TVertexGraph)(unsafe.Pointer(graph)).Fbuckets = libc.Xcalloc(tls, uint64(numBuckets), uint64(unsafe.Sizeof(uintptr(0))))
 		if (*TVertexGraph)(unsafe.Pointer(graph)).Fbuckets != uintptr(0) {
 		} else {
-			libc.X__assert_fail(tls, ts+1774, ts+1797, uint32(40), uintptr(unsafe.Pointer(&__func__26)))
+			libc.X__assert_fail(tls, ts+1774, ts+1797, int32(40), uintptr(unsafe.Pointer(&__func__26)))
 		}
 	} else {
 		(*TVertexGraph)(unsafe.Pointer(graph)).Fbuckets = uintptr(0)
@@ -16022,7 +15981,7 @@ func XaddVertexNode(tls *libc.TLS, graph uintptr, fromVtx uintptr, toVtx uintptr
 	var node uintptr = libc.Xmalloc(tls, uint64(unsafe.Sizeof(TVertexNode{})))
 	if node != uintptr(0) {
 	} else {
-		libc.X__assert_fail(tls, ts+1841, ts+1797, uint32(98), uintptr(unsafe.Pointer(&__func__27)))
+		libc.X__assert_fail(tls, ts+1841, ts+1797, int32(98), uintptr(unsafe.Pointer(&__func__27)))
 	}
 	X_initVertexNode(tls, node, fromVtx, toVtx)
 	// Determine location
