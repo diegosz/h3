@@ -27,6 +27,8 @@
 #include "h3Index.h"
 #include "latLng.h"
 
+#include "isfinite.h"
+
 /**
  * Width of the bounding box, in rads
  * @param  bbox Bounding box to inspect
@@ -212,7 +214,7 @@ H3Error bboxHexEstimate(const BBox *bbox, int res, int64_t *out) {
 
     // Divide the two to get an estimate of the number of hexagons needed
     double estimateDouble = ceil(a / pentagonAreaKm2);
-    if (!isfinite(estimateDouble)) {
+    if (!isXfinite(estimateDouble)) {
         return E_FAILED;
     }
     int64_t estimate = (int64_t)estimateDouble;
@@ -244,7 +246,7 @@ H3Error lineHexEstimate(const LatLng *origin, const LatLng *destination,
 
     double dist = H3_EXPORT(greatCircleDistanceKm)(origin, destination);
     double distCeil = ceil(dist / (2 * pentagonRadiusKm));
-    if (!isfinite(distCeil)) {
+    if (!isXfinite(distCeil)) {
         return E_FAILED;
     }
     int64_t estimate = (int64_t)distCeil;
